@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>민원문자 보내기</title>
+  <title>해링턴스퀘어신흥역 민원문자 보내기</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#f6f7fb; }
     .wrap { max-width: 760px; margin: 0 auto; padding: 16px; }
@@ -33,20 +33,19 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>📩 민원문자 (복사/문자앱 연결)</h1>
+    <h1>📩 민원문자보내기 (복사/문자앱 연결)</h1>
     <div class="hint">
-      아래 <b>민원1~3 텍스트</b>를 복사하거나, <b>010-1234-5678</b>로 바로 문자앱을 열어 전송할 수 있어요.
-      (텍스트 수정 가능)
+      아래 <b>민원1, 민원2, 민원3 텍스트</b>를 복사하거나, <b>010-5920-0184</b>로 바로 문자앱을 열어 전송할 수 있습니다. 
+      텍스트 수정도 가능해요 :)
     </div>
 
     <!-- 민원 1 -->
     <div class="card" data-card="1">
       <div class="title">민원 1</div>
-      <textarea id="txt1">[민원1]
-여기에 민원1 내용을 넣어주세요.</textarea>
+      <textarea id="txt1">민원1 텍스트</textarea>
       <div class="btns">
         <button class="copy" type="button" onclick="copyText(1)">📋 텍스트 복사</button>
-        <a class="btn send" href="#" onclick="openSms(event, 1)">📨 010-1234-5678로 문자 보내기</a>
+        <a class="btn send" href="#" onclick="openSms(event, 1)">📨 문자 보내기</a>
       </div>
       <div class="status" id="status1">복사되었습니다.</div>
     </div>
@@ -54,11 +53,10 @@
     <!-- 민원 2 -->
     <div class="card" data-card="2">
       <div class="title">민원 2</div>
-      <textarea id="txt2">[민원2]
-여기에 민원2 내용을 넣어주세요.</textarea>
+      <textarea id="txt2">민원2 텍스트</textarea>
       <div class="btns">
         <button class="copy" type="button" onclick="copyText(2)">📋 텍스트 복사</button>
-        <a class="btn send" href="#" onclick="openSms(event, 2)">📨 010-1234-5678로 문자 보내기</a>
+        <a class="btn send" href="#" onclick="openSms(event, 2)">📨 문자 보내기</a>
       </div>
       <div class="status" id="status2">복사되었습니다.</div>
     </div>
@@ -66,23 +64,19 @@
     <!-- 민원 3 -->
     <div class="card" data-card="3">
       <div class="title">민원 3</div>
-      <textarea id="txt3">[민원3]
-여기에 민원3 내용을 넣어주세요.</textarea>
+      <textarea id="txt3">민원3 텍스트</textarea>
       <div class="btns">
         <button class="copy" type="button" onclick="copyText(3)">📋 텍스트 복사</button>
-        <a class="btn send" href="#" onclick="openSms(event, 3)">📨 010-1234-5678로 문자 보내기</a>
+        <a class="btn send" href="#" onclick="openSms(event, 3)">📨 문자 보내기</a>
       </div>
       <div class="status" id="status3">복사되었습니다.</div>
     </div>
 
-    <div class="footer">
-      번호 변경은 상단 스크립트의 <code>PHONE</code> 값만 바꾸면 됩니다.
-      일부 iOS 환경에서는 문자앱 연결이 기기/브라우저 설정에 따라 동작이 다를 수 있어요.
-    </div>
+    <div class="footer">해링턴스퀘어신흥역 입주예정자협의회</div>
   </div>
 
   <script>
-    const PHONE = "01012345678"; // 하이픈 없이
+    const PHONE = "01059200184"; // 하이픈 없이
 
     function isIOS() {
       return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
